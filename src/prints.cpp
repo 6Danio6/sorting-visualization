@@ -12,7 +12,7 @@ void printValues(int* arr, int length, int width)
         // if (arr[i] < 10) std::cout << pad[odd ? padLength+1 : padLength] << arr[i] << pad[padLength+1];
         // else std::cout << pad[odd ? padLength+1 : padLength] << arr[i] << pad[padLength];
         if (arr[i] < 10) std::cout << repeatChar(' ', odd ? padLength+1 : padLength) << arr[i] << repeatChar(' ', padLength+1);
-        else std::cout << repeatChar(' ', odd ? padLength+1 : padLength) << arr[i] << repeatChar(' ', padLength);
+        else std::cout << repeatChar(' ', padLength) << arr[i] << repeatChar(' ', odd ? padLength + 1 : padLength);
     }
 
     std::cout << std::endl;
